@@ -1,0 +1,10 @@
+.navbar ul{
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    justify-content: center;
+}
+.navbar ul li{
+margin: 0px 25px;
+font-family: 'Roboto Condensed', sans-serif;
+}

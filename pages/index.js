@@ -13,23 +13,7 @@ export default function Home() {
         {/* Script tag can add to this line */}
       </Head>
 
-      <nav className={styles.navbar}>
-        <ul>
-          <li>
-          <Link href="/about">Home</Link>
-           </li>
-          <li>
-            
-          <Link href="/about">About</Link></li>
-          <li>
-
-          <Link href="/service">Service</Link>
-          </li>
-          <li>
-          <Link href="/contact"> Contact</Link>
-            </li>
-        </ul>
-      </nav>
+     <h1>This is Home page</h1>
    
     </div>
   )

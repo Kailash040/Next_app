@@ -1,9 +1,10 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import styles from '../styles/Home.module.css'
-import Link from "next/link"
-export default function Home() {
-  
+import { useState } from 'react'
+import { loadGetInitialProps } from 'next/dist/shared/lib/utils'
+export default function Home(props) {
+  console.log(props)
+  const [item,setItem]=useState(props.data)
   return (
     <div className={styles.container}>
       <Head>
@@ -12,25 +13,13 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
         {/* Script tag can add to this line */}
       </Head>
-
-      <nav className={styles.navbar}>
-        <ul>
-          <li>
-          <Link href="/about">Home</Link>
-           </li>
-          <li>
-            
-          <Link href="/about">About</Link></li>
-          <li>
-
-          <Link href="/service">Service</Link>
-          </li>
-          <li>
-          <Link href="/contact"> Contact</Link>
-            </li>
-        </ul>
-      </nav>
-   
+     
+  
     </div>
   )
 }
+// This gets called on every request
+ 
+// export async function getServerSideProps(){
+
+// }

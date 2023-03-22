@@ -6,6 +6,8 @@ const blog = (props) => {
     // 
     // 
     <div>blog</div>
+    // 
+    // 
   )
 }
   
